@@ -1,0 +1,14 @@
+html {
+  padding: 20px;
+  border: 4cm;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.Juegoprincipal {
+  display: flex;
+  align-content: center;
+}
+body {
+  display: flex;
+  background-color: blueviolet;
+  align-content: center;
+}
