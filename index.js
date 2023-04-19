@@ -203,33 +203,25 @@ const GetrandomCardnext = () => {
 };
 
 function high() {
-  let morehigh = prompt("La siguiente carta es mayor a la actual");
+  let morehigh = document.querySelector(".up");
   if ((morehigh = "mayor")) {
     GetrandomCardnext();
     if (PreviusCard <= NextCard) {
-      return console.log(
-        `tu carta es ${NextCard.card} de ${NextCard.type} Has perdido`
-      );
+      return `tu carta es ${NextCard.card} de ${NextCard.type} Has perdido`;
     } else {
-      return console.log(
-        `tu carta es ${NextCard.card}de ${NextCard.type} Has ganado `
-      );
+      return `tu carta es ${NextCard.card}de ${NextCard.type} Has ganado `;
       Score++;
     }
   }
 }
 function less() {
-  let moreless = prompt("La siguiente carta es menor a la actual");
+  let moreless = document.querySelector(".down");
   if ((moreless = "menor")) {
     GetrandomCardnext();
     if (PreviusCard <= NextCard) {
-      return console.log(
-        `tu carta es ${NextCard.card} de ${NextCard.type} Has perdido`
-      );
+      return `tu carta es ${NextCard.card} de ${NextCard.type} Has perdido`;
     } else {
-      return console.log(
-        `tu carta es ${NextCard.card}de ${NextCard.type} Has ganado `
-      );
+      return `tu carta es ${NextCard.card}de ${NextCard.type} Has ganado `;
     }
     Score++;
   }
@@ -239,7 +231,7 @@ function tobecontinue() {
   if (tocontinue) {
     Game();
   } else {
-    console.log(`gracias por jugar ha terminado con ${score++}`);
+    `gracias por jugar ha terminado con ${score++}`;
   }
 }
 function Game() {
